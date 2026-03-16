@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
     email       VARCHAR(255)    NOT NULL UNIQUE,
     password    VARCHAR(255)    NOT NULL,
     name        VARCHAR(100)    NOT NULL,
+    phone       VARCHAR(20),
     role        VARCHAR(50)     NOT NULL DEFAULT 'USER',
     tenant_id   BIGINT          NOT NULL REFERENCES tenants(id) ON DELETE CASCADE,
     created_at  TIMESTAMP       NOT NULL DEFAULT NOW(),
