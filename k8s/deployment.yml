@@ -41,6 +41,8 @@ spec:
               value: "opentraum"
             - name: DB_PASSWORD
               value: "opentraum"
+            - name: SPRING_R2DBC_URL
+              value: "r2dbc:postgresql://opentraum-postgres:5432/opentraum_user"
           resources:
             requests:
               memory: "128Mi"
