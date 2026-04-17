@@ -6,9 +6,9 @@ spring:
     name: opentraum-user-service
 
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/opentraum_user
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:postgres}
+    url: r2dbc:mariadb://${DB_HOST:opentraum-mariadb}:${DB_PORT:3306}/${DB_NAME:opentraum_user}
+    username: ${DB_USERNAME:opentraum}
+    password: ${DB_PASSWORD:opentraum123!}
 
   data:
     redis:
