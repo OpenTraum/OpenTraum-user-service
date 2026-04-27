@@ -40,7 +40,7 @@ spec:
       priorityClassName: opentraum-medium
       containers:
         - name: user-service
-          image: amdp-registry.skala-ai.com/skala26a-cloud/opentraum-user-service:latest
+          image: amdp-registry.skala-ai.com/skala26a-cloud/opentraum-user-service:d87cdf2b9d6b5ece6ff0ce5bd7a95c189169e27b
           imagePullPolicy: Always
           ports:
             - containerPort: 8082
