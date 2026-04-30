@@ -38,7 +38,7 @@ spec:
       priorityClassName: opentraum-medium
       containers:
         - name: user-service
-          image: 881490135253.dkr.ecr.ap-northeast-2.amazonaws.com/skala3-cloud1-team8-opentraum-user-service:1545c667d5b490ded9a0ee41f9f691f3da9dc3c5
+          image: 881490135253.dkr.ecr.ap-northeast-2.amazonaws.com/skala3-cloud1-team8-opentraum-user-service:002e243ea646b7b4687773b6b46b49edefbafdd8
           imagePullPolicy: Always
           ports:
             - containerPort: 8082
